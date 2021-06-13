@@ -1,0 +1,2 @@
+stable_fluids: main.cpp initialize_grid.cpp draw_substance_density.cpp grid.cpp move_substances.cpp update_fluid_velocity.cpp sparse_matrix.cpp linear_solver.cpp update_fluid_velocity_dft.cpp
+	clang++ main.cpp initialize_grid.cpp draw_substance_density.cpp grid.cpp move_substances.cpp update_fluid_velocity.cpp sparse_matrix.cpp linear_solver.cpp update_fluid_velocity_dft.cpp `pkg-config --cflags --libs opencv4` -std=c++11 -O3 -L/usr/local/lib/ -lfftw3
